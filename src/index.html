@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="w-[100%] flex flex-col items-center justify-center h-[100vh]">
+    <section
+      class="flex items-center justify-center h text-slate-800 flex-col w-full"
+    >
+      <h1 class="text-2xl mb-[3rem] font-medium">Register</h1>
+
+      <form class="flex flex-col justify-center w-[80%]">
+        <!-- name -->
+        <label for="name">Name</label>
+        <input
+          placeholder="eg: Oyetola Muiz"
+          class="placeholder:text-slate-300 border-[1px] mt-2 mb-[1rem] outline-none p-2 focus:border-blue-600 rounded-md"
+          type="text"
+          id="name"
+          autocomplete="disabled"
+        />
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input
+          placeholder="eg: oyetolamuiz81@gmail.com"
+          class="placeholder:text-slate-300 mb-[1rem] border-[1px] mt-2 outline-none p-2 focus:border-blue-600 rounded-md"
+          type="text"
+          id="email"
+          autocomplete="disabled"
+        />
+
+        <!-- Gender -->
+        <label for="gender"> Gender</label>
+        <select
+          class="outline-none border-[1px] mb-[1rem] p-2 rounded-md mt-2"
+          name=""
+          id="gender"
+          autocomplete="disabled"
+        >
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <!-- password -->
+        <label for="password">Password</label>
+
+        <input
+          placeholder="password"
+          class="placeholder:text-slate-300 mb-[1rem] border-[1px] mt-2 outline-none p-2 focus:border-blue-600 rounded-md"
+          type="password"
+          id="password"
+          autocomplete="disabled"
+        />
+        <span class="text-xs mb-[1rem] text-red-500 hidden" id="requiredPass1">
+          input field is required
+        </span>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          placeholder="confirm password"
+          class="placeholder:text-slate-300 mb-[1rem] border-[1px] mt-2 outline-none p-2 focus:border-blue-600 rounded-md"
+          type="password"
+          id="confirmPassword"
+          autocomplete="disabled"
+        />
+        <span class="text-xs mb-[1rem] text-red-500 hidden" id="requiredPass">
+          input field is required
+        </span>
+
+        <button
+          class="bg-blue-600 mt-2 disabled:bg-slate-400 text-white p-3 rounded-md"
+          disabled
+          id="register"
+          type="submit"
+        >
+          Register
+        </button>
+        <br />
+        <p class="">Already have account ? <span class="text-blue-600" id="link" >SignIn</span></p>
+      </form>
+    </section>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
